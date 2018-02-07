@@ -6,7 +6,7 @@ python:
   - "3.6"
   
 install:
-  - pip install -r requirements.txt
+  - pip --USER install -r requirements.txt
   
 script:
   - TRAVIS_BUILD_DIRECTORY/travis-test/tests/test_something.py
