@@ -3,10 +3,9 @@ sudo: true
 
 python:
   - "2.7"
-  - "3.6"
   
 install:
-  - pip --user install -r requirements.txt
+  - pip install --user -r requirements.txt
   
 script:
   - TRAVIS_BUILD_DIRECTORY/travis-test/tests/test_something.py
